@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      .box-list li {
+        /* 일반적으로 float을 적용시키면 부모컨텐츠의 높이가 지정이 안되는 현상때문에 
+          float를 해제하는 작업을 반드시 같이 사용합니다. */
+        /* li 에 float을 지정하게 되면 그걸 감싸고 있던 ul의 높이가 사라짐 0으로 */
+        float: left;
+        width: 16.66%;
+        box-sizing: border-box; /* border까지 box의 사이즈로 잡아줌. */
+        border: 1px solid;
+      }
+      /*.box-list:after {
+         float해제하는 작업  >> 하고 나면 ul의 높이가 21로 생기는걸 볼수 있음.  
+         1. 가상요소방법 
+        content: "";
+        display: block;
+        clear: both;
+      }*/
+      .box-list {
+        /* float해제하는 작업  >> 하고 나면 ul의 높이가 21로 생기는걸 볼수 있음. */
+        /* 2. 부모요소에  overflow:hidden; */
+        width: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="box-list">
+      <li>블럭1</li>
+      <li>블럭2</li>
+      <li>블럭3</li>
+      <li>블럭4</li>
+      <li>블럭5</li>
+      <li>블럭6</li>
+    </ul>
+  </body>
+</html>

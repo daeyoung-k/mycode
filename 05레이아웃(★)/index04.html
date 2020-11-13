@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .list {
+        overflow: hidden;
+      }
+      .list .list1_1,
+      .list .list1_2 {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+      }
+      .list1_1 img {
+        width: 100%;
+      }
+      .list2_1,
+      .list2_2 {
+        height: 50%;
+        overflow: hidden;
+      }
+      .top_left {
+        float: left;
+      }
+      .top_right {
+        float: right;
+      }
+      .clear {
+        clear: both;
+        overflow: hidden;
+      }
+      .bottom {
+        text-align: center;
+        width: 50%;
+        box-sizing: border-box;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="list1_1">
+        <img src="img/보라빛.jpg" alt="보라배경" />
+      </div>
+      <div class="list1_2">
+        <div class="list2_1">
+          <div>제목 : 패딩바텀 50px;</div>
+          <div>내용 : gg</div>
+        </div>
+        <div class="list2_2">
+          <div class="top_left">가격</div>
+          <div class="top_right">10000원</div>
+          <div class="clear">
+            <button class="bottom">장바구니</button>
+            <button class="bottom">구매하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

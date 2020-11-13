@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .list {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid;
+      }
+      .list .top,
+      .list .middle,
+      .list .bottom {
+        border: 1px solid;
+      }
+      .inner {
+        overflow: hidden;
+      }
+      .inner .left {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        border: 1px solid;
+      }
+      .list .middle {
+        padding: 50px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="top">탑</div>
+      <div class="middle">
+        <div class="inner">
+          <div class="left">좌1</div>
+          <div class="left">좌2</div>
+        </div>
+      </div>
+      <div class="bottom">바텀</div>
+    </div>
+  </body>
+</html>

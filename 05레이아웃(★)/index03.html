@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .outer {
+        border: 1px solid;
+      }
+      .inner {
+        border: 1px solid;
+      }
+      #mid {
+        padding: 20px 0px;
+        overflow: hidden;
+      }
+      .flo {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">탑</div>
+      <div class="inner" id="mid">
+        <div class="flo">중간패딩 위아래 20px</div>
+        <div class="flo">중간패딩 위아래 20px</div>
+      </div>
+      <div class="inner">바텀</div>
+    </div>
+  </body>
+</html>
