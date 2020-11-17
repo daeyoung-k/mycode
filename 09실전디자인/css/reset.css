@@ -1,0 +1,39 @@
+/*=========== 웹폰트 선언 ===========*/
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+
+/*=========== 디자인 시작시 전역 설정 ===========*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* 박스에 border-box설정 */
+}
+body,
+html {
+  font-family: "Song Myung", serif;
+  width: 100%;
+  min-width: 320px; /* body영역의 최소사이즈 */
+}
+img {
+  /* 이미지를 다루기 쉽게 하기 위해 설정 */
+  max-width: 100%; /* 사이즈가 변해도 넓이는 유지 */
+  height: auto; /* 사이즈가 변하면 높이는 넓이에 따라서 유지 */
+}
+input,
+textarea,
+button,
+select {
+  /* 브라우저별로 다른 옵션이 되어있어서
+    고유하게 적용되어 있는 form 관련 요소들을 제거해서
+    여러브라우저에서 동일한 form 관련태그 디자인이 보이도록 처리 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}

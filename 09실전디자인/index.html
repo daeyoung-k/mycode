@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- 부트스트랩 참조 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- 개인디자인추가 
+      부트스트랩 다음 동작해야 하므로, 가장 아래에 작성
+    -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style type="text/css">    
+    
+  </style>
+</head>
+
+<body>
+  <!-- 1. 개발자도구에서 디자인 속성을 확인하고 nav-inverse삭제 -->
+  <header>
+    <nav class="navbar my-header">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- 모바일사이즈로 줄었을때 나오는 버튼 영역 -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" width="30" alt="logo">
+          </a><!-- logo 영역 -->
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <!-- 메뉴 작성 부분 -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+          </ul>
+          <!-- 우측 메뉴 부분 (드롭다운부분으로 변경)-->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" action="##">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" name="search">
+              <div class="input-group-btn">
+                <button class="btn btn-primary" type="submit">검색</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+      
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- 배너 영역 -->
+  <!-- bs.js jquery.js가 반드시 필요 -->
+  <!-- 헤더영역과 겹치지 않도록 마진처리 -->
+  <section class="my-banner">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="#">
+          <img src="img/쿠팡1.jpg" alt="슬라이드1" >
+          </a>
+        </div>
+  
+        <div class="item">
+          <a href="#">
+          <img src="img/쿠팡2.jpg" alt="슬라이드2" >
+          </a>
+        </div>
+      
+        <div class="item">
+          <a href="#">
+          <img src="img/쿠팡3.jpg" alt="슬라이드3" >
+          </a>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>오늘의 발견</h2>
+      <div class="row"> <!-- row안에서 col을 어느div -->
+        <ul class="col-xs-12 prod-list"><!-- 윤곽1 -->
+          <li class="col-sm-6"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box1.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box2.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box3.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box4.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box5.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box6.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-12 col-md-6" ><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box7.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box8.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+          <li class="col-sm-6 col-md-3"><!-- 숨긴박스 -->
+            <a href="#" class="prod-box"><!-- 윤곽1(블럭으로 변경) -->
+              <img src="img/box9.jpg">
+              <span class="arrow"><i class="glyphicon glyphicon-menu-right"></i></span>
+              <span class="hover">상세보기<i class="glyphicon glyphicon-menu-right"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="footer-copyright">
+          <a href="#"><img src="img/logo.svg" width="20" ></a>
+          Coding404 | 대표자 : 박인욱 | E-MAIL : kkk@naver.com<br/>          
+          개인정보보호책임자 : 박인욱 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+          주소 : 서울시 강남구
+          <address>Bootstrap. ALL RIGHTS RESERVED</address>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <ul class="footer-menu">
+          <li><a href="#">유용한 정보</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">고객센터</a></li>
+          <li><a href="#">개인정보 취급방침</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

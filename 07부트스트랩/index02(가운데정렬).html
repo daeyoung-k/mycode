@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .my-grid {
+        margin: 0 auto; /* 박스안 넓이가 지정되어 있을때 가운데 정렬 */
+        float: none; /* my-gird에서만 float를 사용하지 않겠다는 의미. 즉, 가운데 정렬이 이루어짐 */
+        /* 모든 col 옵션에 float:left가 적용되어 있음. 
+          만약에 그리드를 1개만 사용하고 해당 그리드를 가운데 정렬
+          float을 없애는 none과 같이 사용하면 됨.
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-9 col-xs-12 my-grid">
+            <!-- form-group 안에 form-control 이용 -->
+            <!-- email주소 -->
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" />
+            </div>
+            <!-- 패스워드 -->
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" />
+            </div>
+            <!-- 버튼 -->
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
