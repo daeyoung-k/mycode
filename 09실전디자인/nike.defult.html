@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- 개인디자인추가 
+      부트스트랩 다음 동작해야 하므로, 가장 아래에 작성
+    -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style type="text/css">
+  </style>
+</head>
+<body>
+    <header class="my-header">
+        <nav class="navbar my-header">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <!-- 모바일사이즈로 줄었을때 나오는 버튼 영역 -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" width="30" alt="logo">
+              </a><!-- logo 영역 -->
+            </div>
+    
+    
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <!-- 메뉴 작성 부분 -->
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+              <!-- 우측 메뉴 부분 (드롭다운부분으로 변경)-->
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-right" action="##">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">검색</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+          
+            </div>
+    
+          </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header1">
+                        <h2 >상세보기<small>(쿠팡예제)</small></h2>
+                    </div>
+                    <hr class="hr1"/>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="img/detail.jpg" >
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <div class="detail-info">
+                        <p class="title">[게릴라특가] 30일 체험가능! 벨라페이스 3컬러 LED마스크 눈마사지 겸용/4단계 시간조절 피부 홈케어 + 사은품까지!</p>
+                        <p class="price"><strong>135,000원</strong></p>
+                        <p class="content">무료배송
+                            상품별배송 | 택배배송 | 당일출고, 12시 이전 결제 건까지 해당 (주말, 공휴일 제외)
+                        </p>                        
+                    </div>                    
+                    <div class="detail-control">
+                        <div class="price">
+                            <p class="left">총 상품금액</p>
+                            <p class="right"><strong>0 원</strong></p>
+                        </div> 
+                        <div class="order">
+                            <button class="left btn btn-defult">장바구니</button>
+                            <button class="right btn btn-primary">구매하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <!-- 댓글 영역 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form action="#" class="reply-wrap">
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="프로필">
+                        </div>
+                        <div class="reply-content"><!-- 부트스트랩 클래스 사용 -->
+                            <textarea class="form-control" rows="3"></textarea>
+                            <div class="reply-group"><!-- 부모상자 -->
+                                <div class="left"><!-- left -->
+                                    <input type="text" class="form-control" placeholder="이름">
+                                    <input type="text" class="form-control" placeholder="비밀번호">
+                                </div>
+                                <button class="right btn btn-info">등록하기</button><!-- right -->
+                            </div>
+                        </div>
+                    </form>
+                    <div class="reply-wrap">
+                        <div class="reply-img">
+                            <img src="img/profile.png" alt="프로필">
+                        </div>
+                        <div class="reply-comment">
+                            <div class="left">
+                                <strong>honggildong</strong>
+                                <small>2019/12/10</small>
+                                <p>여기는 댓글영역</p>
+                            </div>
+                            <div class="right">
+                                <a href="#"><span><i class="glyphicon glyphicon-remove"></i>삭제</span></a>
+                                <a href="#"><span><i class="glyphicon glyphicon-pencil"></i>수정</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="footer-copyright">
+                <a href="#"><img src="img/logo.svg" width="20" ></a>
+                Coding404 | 대표자 : 박인욱 | E-MAIL : kkk@naver.com<br/>          
+                개인정보보호책임자 : 박인욱 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+                주소 : 서울시 강남구
+                <address>Bootstrap. ALL RIGHTS RESERVED</address>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <ul class="footer-menu">
+                <li><a href="#">유용한 정보</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

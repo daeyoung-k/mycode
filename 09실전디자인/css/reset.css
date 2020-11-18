@@ -1,5 +1,5 @@
 /*=========== 웹폰트 선언 ===========*/
-@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 /*=========== 디자인 시작시 전역 설정 ===========*/
 * {
@@ -9,7 +9,7 @@
 }
 body,
 html {
-  font-family: "Song Myung", serif;
+  font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
   min-width: 320px; /* body영역의 최소사이즈 */
 }

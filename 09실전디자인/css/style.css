@@ -120,3 +120,95 @@ transition: opacity 1s ease-in-out; /* transition(변경옵션, 주기, 변경�
 .text-center{overflow: hidden;}
 .text-center button{float: right; padding: 4px 12px;}
 .text-center ul{margin: 0 0;}
+
+
+
+    .detail-info .title{font-size: 20px; font-weight: 500; }
+    .detail-info .price{
+        font-size: 20px;
+        border-bottom: 1px solid #777;
+        border-top: 1px solid #777;
+        padding: 10px 0;
+    }
+    .detail-info .content{color: #888;}
+    .detail-control{padding-top: 142px;}
+    .detail-control .price,
+    .detail-control .order{overflow: hidden;}
+    .detail-control .left{float: left;}
+    .detail-control .right{float: right;}
+    
+    /*글씨 조정 (상자높이에 line-height를 맞춘다)*/
+    .detail-control .price .left{font-size: 15px; line-height: 52px; margin: 0;}
+    .detail-control .price .right{font-size: 30px; line-height: 52px; margin: 0;}
+    
+    /*버튼*/
+    .detail-control .order button{width: 50%; padding: 10px 15px; font-size: 25px;}
+
+    /*댓글영역*/
+    .reply-group input{width: 180px;}
+    .reply-wrap{
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 20px;
+        position: relative; /*부모영역에 relative*/
+    }
+    .reply-img{position: absolute; top: 20px; left: 20px;} /*이미지 포지션*/
+    .reply-content{padding-left: 60px;}    
+    .reply-content textarea{
+        margin-bottom: 10px; 
+        border-radius: 4px;
+    /*텍스트영역 리사이징 옵션, 애니메이션*/
+        resize: vertical;
+        height: 100px; /*높이*/
+        transition: height 1s ease-in-out;/*애니메이션 효과 (변경할속성, 지속시간, 애니메이션방식, 딜레이초*/
+    }
+    .reply-group .left input{width: 200px; margin-bottom: 5px; border-radius: 4px;}
+    .reply-group{overflow: hidden;}
+    .reply-group .left{float: left;}
+    .reply-group .right{float: right;}
+
+    /*텍스트영역 리사이징 옵션, 애니메이션*/
+    .reply-content textarea:focus{height: 200px;}
+
+    .reply-wrap{position: relative; padding: 20px;}
+    .reply-img{position: absolute; top: 20px; left: 20px; }
+
+    .reply-comment{padding-left: 60px; overflow: hidden;}
+    .reply-comment .left{float: left;}
+    .reply-comment .left small{margin-left: 10px;}
+    .reply-comment .left p{margin: 0;}
+    .reply-comment .right{float: right;}
+    .reply-comment .right a{text-decoration: none; color: #777777;}
+    /*===============회원 가입===============*/
+  .join-form{
+      /*하나의 그리드 상자를 정가운데 정렬방법*/ 
+      margin: 0 auto; /*가운데 정렬이 안되는 이유가 col관련된 클래스가 float을 가지고 있기 때문 */
+      float: none;        
+  }
+  .join-form form{
+      
+      border-radius: 12px;
+      box-shadow:0px 8px 16px rgb(0, 0, 0, 0.335);
+      padding: 35px;
+  }
+  @media(max-width: 767px){ /* 767px 미만일 때 적용 (col-xs가 동작하는 픽셀과 같음)*/
+      .join-form form{
+          padding: 50px 10px;
+      }
+  }
+  .title-box{
+      /*제목 박스*/
+      width: 250px; 
+      margin: 60px auto; /*박스 정렬*/ 
+      text-align: center; /*글씨 정렬*/
+      padding: 20px 40px;
+      border-bottom: 1px solid #e1e1e1;
+      border-top: 1px solid #e1e1e1;
+  }
+  .login-form{margin: 0 auto; float: none;}
+    
+    .login-form form{
+        border-radius: 12px;
+        box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.335);
+        padding: 25px;        
+    }
