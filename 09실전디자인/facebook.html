@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+    <!-- 개인디자인추가 
+        부트스트랩 다음 동작해야 하므로, 가장 아래에 작성
+      -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <header class="my-header">
+        <nav class="navbar my-header">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <!-- 모바일사이즈로 줄었을때 나오는 버튼 영역 -->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" width="30" alt="logo">
+              </a><!-- logo 영역 -->
+            </div>
+    
+    
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <!-- 메뉴 작성 부분 -->
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+              <!-- 우측 메뉴 부분 (드롭다운부분으로 변경)-->
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="navbar-form navbar-right" action="##">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" name="search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">검색</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+          
+            </div>
+    
+          </div>
+        </nav>
+    </header>
+
+    <section style=" margin-top: 70px;">
+        <div class="container">
+            <div class="row">
+                <aside class="col-sm-3 aside-facebook"><!-- 좌측 사이드 -->
+                    <div class="menu1">
+                        <div class="profileimg">
+                            <img src="img/profile.png" width="50px" alt="프로필">
+                            권대영
+                        </div>
+                            <ul>
+                                <li>뉴스피드</li>
+                                <li>메신저</li>
+                                <li>watch동영상</li>
+                            </ul>
+                    </div>                          
+                    <div class="menu2">
+                        <ul>
+                            <li>둘러보기</li>
+                            <li>기부 캠페인</li>
+                            <li>페이지</li>
+                            <li>그룹</li>
+                            <li>이벤트</li>
+                            <li>친구리스트</li>
+                        </ul>
+                                                               
+                    </div>
+                </aside>
+                <div class="col-xs-12 col-sm-9 section-facebook"><!-- 우측 본문 -->
+                    <div> <!-- 컨텐츠 영역 -->
+                        <div class="title-inner">
+                            <div class="profile">
+                                <img src="img/profile.png" width="50px" alt="프로필">                                
+                            </div>
+                            <div class="title">
+                                <p>이름</p>
+                                <small>21시간</small>
+                            </div>
+                        </div>
+                        <div class="content-inner">
+                            <p>삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
+                        </div>
+                        <div class="image-inner">
+                            <img src="img/평화.jpg" alt="평화">
+                        </div>
+                        <div class="like-inner"></div>
+                            <a href="#"><img src="img/like (1).png" width="30" alt="좋아요"></a>
+                            <span>522</span>
+                        <div class="button-inner">
+                            <a href=""><span><i class="glyphicon glyphicon-thumbs-up"></i>좋아요</span></a>
+                            <a href=""><span><i class="glyphicon glyphicon-comment"></i>댓글달기</span></a>
+                            <a href=""><span><i class="glyphicon glyphicon-share"></i>공유</span></a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="footer-copyright">
+                <a href="#"><img src="img/logo.svg" width="20" ></a>
+                Coding404 | 대표자 : 박인욱 | E-MAIL : kkk@naver.com<br/>          
+                개인정보보호책임자 : 박인욱 | KG-ITbank에서 오프라인 강의를 진행합니다<br/>
+                주소 : 서울시 강남구
+                <address>Bootstrap. ALL RIGHTS RESERVED</address>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <ul class="footer-menu">
+                <li><a href="#">유용한 정보</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">개인정보 취급방침</a></li>
+      
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

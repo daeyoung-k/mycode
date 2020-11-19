@@ -1,0 +1,127 @@
+section{margin-top: 113px;}
+.myheader{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    margin-bottom: 0;    
+}
+.navbar{border: none;}
+.navbar-toggle{
+    border-color: white;
+  }
+.navbar-toggle .icon-bar{
+    background-color: white;
+}
+.main-text{
+    position: relative; 
+    background-color: white;
+    width: 100%;   
+}
+.main-text ul{background-color: rgb(233, 217, 217);}
+.main-login{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+.main-login a{
+    padding: 0 5px;
+    text-decoration: none;
+    color: rgb(247, 189, 189);
+}
+.main-login a:hover{
+    color: rgb(102, 91, 91);
+}
+.main-text .text{padding: 15px;
+}
+.main-text h2{ margin: 0;}
+.main-menu{
+    background-color: rgb(139, 128, 128);
+    width: 100%;            
+}    
+.main-menu ul{margin-bottom: 0;}    
+.main-menu > ul li{
+    display: inline;
+               
+}
+.main-menu > ul li:hover{
+    background-color: rgb(219, 195, 195);
+}
+.main-menu > ul li>a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    line-height: 20px;
+    display: inline-block;
+}
+.main-menu > ul li a:hover{background-color: rgb(231, 130, 130);}
+.catimg{
+    width: 700px;
+    margin: 0 auto;
+    position: relative;     
+}
+.catimg img{
+    height: 500px; 
+    width: 700px;
+}
+.cattext {    
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    
+}
+.cattext p{    
+    color: rgb(240, 163, 29);
+}
+.side{
+    position: fixed;
+    right: 0;
+    top: 80%;
+    z-index: 10;
+}
+.side li{
+    background-color: rgb(139, 128, 128);
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(184, 157, 157);
+    border-radius: 4px;
+}
+.side li:hover{
+    background-color: rgb(231, 130, 130);
+}
+.side > ul li a{
+    text-decoration: none;
+    color: black; 
+    font-size: 15px;    
+}
+.imgcat{
+    margin-bottom: 100px;
+}
+.imgcat1 img{border-radius: 4px;}
+.content{
+    margin-top: 50px;
+    padding: 25px;
+}
+.imgcat-content span{
+    display: block; 
+    text-align: center;
+}
+.imgcat-color{
+    text-align: center;
+    margin-top: -150px; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out;
+}
+.imgcat-color a{
+    display: block;   
+    text-decoration: none;
+    color: rgb(235, 57, 26);
+}
+.imgcat-color a small{color: rgb(250, 246, 2);}
+.imgcat:hover{
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+.imgcat:hover > .imgcat-color{opacity: 1;}

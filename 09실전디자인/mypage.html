@@ -13,8 +13,6 @@
     -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <style type="text/css">    
-  </style>
 </head>
 <body>
     <header class="my-header">
@@ -69,53 +67,13 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 ">
-                    <!-- 탭을 눌렀을 때 숨겨진 화면을 보여지게 처리하는 형태 -->
-                    <!-- li의 아이다와 tap-content안에 id속성이 연결되어 있는 형태 -->
-
-                    <!-- ul에 개인디자인 클래스 선언 -->
-                    <div class="title-box">
-                        Tabs
-                    </div>
-                    <ul class="nav nav-tabs tabs-basic">
-                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-                        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                          <h3>HOME</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                          <h3>Menu 2</h3>
-                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                          <h3>Menu 3</h3>
-                          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
                 <div class="col-xs-12 col-md-10 col-lg-9 tabs-style">
                     <!-- 탭을 눌렀을 때 숨겨진 화면을 보여지게 처리하는 형태 -->
                     <!-- li의 아이다와 tap-content안에 id속성이 연결되어 있는 형태 -->
 
                     <!-- ul에 개인디자인 클래스 선언 -->
                     <div class="title-box">
-                        Tabs
+                        내 정보 관리
                     </div>
                     <ul class="nav nav-tabs tabs-basic2">
                         <li class="active"><a data-toggle="tab" href="#tab1">Home</a></li>
@@ -126,11 +84,66 @@
                       <div class="tab-content">
                         <div id="tab1" class="tab-pane fade in active">
                           <h3>HOME</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <img src="img/쿠팡1.jpg" alt="쿠팡">
                         </div>
                         <div id="tab2" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="title-box">
+                                정보 수정
+                            </div>
+                            <p>* 표시는 필수 사항입니다</p>
+                            <form>
+                                <table class="table">
+                                    <tbody class="m-control">
+                                        <tr>
+                                            <td class="m-title">*ID</td>
+                                            <td><input type="text" class="form-control m-md"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*이름</td>
+                                            <td><input type="text" class="form-control m-md"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*비밀번호</td>
+                                            <td><input type="password" class="form-control m-md"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*비밀번호 확인</td>
+                                            <td><input type="password" class="form-control m-md"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*이메일</td>
+                                            <td><input type="email" class="form-control m-md">@
+                                                <select class="form-control m-sm" id="sel1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                  </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*휴대폰</td>
+                                            <td>
+                                                <input type="text" class="form-control m-sm" placeholder="010">-
+                                                <input type="text" class="form-control m-sm">-
+                                                <input type="text" class="form-control m-sm">
+                                            </td>                                            
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*주소</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="m-title">*상세주소</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="m-footer">
+                                    <button type="button" class="btn btn-defult">목록</button>
+                                    <button type="button" class="btn btn-defult">저장</button>
+                                </div>
+                            </form>
                         </div>
                         <div id="tab3" class="tab-pane fade">
                           <h3>Menu 2</h3>
@@ -141,6 +154,7 @@
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">
@@ -166,6 +180,5 @@
           </div>
         </div>
     </footer>
-    
 </body>
 </html>

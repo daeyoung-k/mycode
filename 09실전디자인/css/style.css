@@ -1,5 +1,6 @@
 /*===========form, btn윤곽===========*/
 .form-control{border-radius: 0;}
+.form-control:focus{border-color: black;}
 .btn{border-radius: 0;}
 /*===========header==================*/
 section{margin-top: 50px;}
@@ -212,3 +213,85 @@ transition: opacity 1s ease-in-out; /* transition(변경옵션, 주기, 변경�
         box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.335);
         padding: 25px;        
     }
+    /*===========탭 스타일===========*/
+    .tabs-basic > li{
+      width: 25%;
+  }
+  .tabs-basic > li > a:hover{background-color: #dddddd;}
+  .tabs-basic > li > a{color: #555; margin: 0; text-align: center;}  
+  .tabs-basic>li.active>a, 
+  .tabs-basic>li.active>a:focus, 
+  .tabs-basic>li.active>a:hover{color: black;}
+  /* 토글탭 디자인 */  
+  .tabs-style{
+    margin: 0 auto;
+    float: none;
+  }
+  .tabs-basic2 li.active > a,
+  .tabs-basic2 li.active > a:focus,
+  .tabs-basic2 li.active > a:hover
+  {
+    background-color: rgb(52, 117, 128);
+    color: white;
+  }
+  /* 기본 a태그 */
+  .tabs-basic2 > li > a{
+    margin-right: 0;
+    border-radius: 0; /*모서리 둥글게*/
+    background-color: rgb(52, 165, 185);
+    color: white;
+  }
+  /* 기본 a태그에 hover가 된경우를 의미 */
+  .tabs-basic2 li > a:hover{
+    background-color: rgb(52, 117, 128);
+    color: white;
+    border: none;
+  }
+  /*==========mypage 스타일=========*/
+  .m-control > tr > .m-title{width: 110px; vertical-align: middle;}
+  .m-control .m-md{width: 200px; display: inline;} /*중간사이즈*/
+  .m-control .m-sm{width: 150px; display: inline;} /*작은사이즈*/
+  .m-footer{text-align: center;}
+  /* ======== 페이스북 그리드 =============== */
+  .section-facebook{
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+  }
+  .title-inner{position: relative;} /*부모영역*/
+  .title-inner .profile{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .title-inner .title{
+    padding-left: 60px;
+  }
+  .content-inner{
+    padding: 10px 0;
+  }
+  .like-inner,
+  .button-inner{
+    border-top: 1px solid #cccccc;
+  }
+  .like-inner{margin-top: 10px;}
+  .like-inner a{
+    text-decoration: none;
+    color: black;    
+  }
+  .like-inner span{
+    vertical-align: middle;
+  }
+  .button-inner{overflow: hidden;}
+  .button-inner a{
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+  }
+  .button-inner i{margin: 0 5px;}
+  @media(max-width:767px){
+    .aside-facebook{
+      display: none;
+    }
+  }
